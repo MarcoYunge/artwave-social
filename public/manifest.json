@@ -1,12 +1,10 @@
 {
   "short_name": "ArtWave",
   "name": "ArtWave - Red de Artistas Emergentes",
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#1a1a2e",
-  "theme_color": "#007BFF",
-  "description": "Red social para músicos y artistas emergentes",
-  "orientation": "portrait-primary",
+  "background_color": "#000000",
+  "theme_color": "#7C3AED",
   "icons": [
     {
       "src": "logo192.png",

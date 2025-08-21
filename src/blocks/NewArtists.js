@@ -6,15 +6,16 @@ function NewArtists() {
   ];
 
   return (
-    <div className="block new-artists">
-      <h2>🌟 Nuevos Artistas</h2>
-      <ul>
-        {artists.map((artist, i) => (
-          <li key={i}>
-            <strong>{artist.name}</strong> • {artist.genre} • {artist.location}
-          </li>
-        ))}
-      </ul>
+    <div className="block">
+      <h2>Nuevos Artistas</h2>
+      {artists.map((artist, i) => (
+        <div key={i} className="card">
+          <h3>{artist.name}</h3>
+          <p><strong>Género:</strong> {artist.genre}</p>
+          <p><strong>Ubicación:</strong> {artist.location}</p>
+          <button className="btn">Seguir</button>
+        </div>
+      ))}
     </div>
   );
 }

@@ -5,17 +5,16 @@ function Marketplace() {
   ];
 
   return (
-    <div className="block marketplace">
-      <h2>🛒 Compra / Vende / Regala</h2>
-      <div className="items">
-        {items.map((item, i) => (
-          <div key={i} className={`item item-${item.type}`}>
-            <h4>{item.title}</h4>
-            <p>Tipo: {item.type}</p>
-            <p>Precio: {item.price}</p>
-          </div>
-        ))}
-      </div>
+    <div className="block">
+      <h2>Compra / Vende / Regala</h2>
+      {items.map((item, i) => (
+        <div key={i} className="card">
+          <h3>{item.title}</h3>
+          <p><strong>Tipo:</strong> {item.type}</p>
+          <p><strong>Precio:</strong> {item.price}</p>
+          <button className="btn">Contactar</button>
+        </div>
+      ))}
     </div>
   );
 }

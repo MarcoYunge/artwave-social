@@ -1,7 +1,26 @@
 body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f9;
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.btn {
+  border-radius: 50px;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #212529;
+  color: white;
+  text-align: center;
 }
 
 .header {
@@ -45,14 +64,6 @@ body {
   padding: 10px;
   margin: 10px 0;
   border-radius: 8px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #16213e;
-  color: white;
-  margin-top: 20px;
 }
 
 input, select, button {

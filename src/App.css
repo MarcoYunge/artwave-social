@@ -72,3 +72,41 @@ input, select, button {
   width: 100%;
   max-width: 300px;
 }
+/* src/App.css */
+body {
+  background-color: #f8f9fa;
+  color: #212529;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e9ecef;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #e9ecef;
+  border: none;
+}
+
+body.dark-mode .list-group-item {
+  background-color: #1e1e1e;
+  color: #e9ecef;
+  border-color: #333;
+}
+
+body.dark-mode .form-control {
+  background-color: #2d2d2d;
+  color: #e9ecef;
+  border-color: #444;
+}
+
+body.dark-mode .btn-outline-dark {
+  color: #e9ecef;
+  border-color: #444;
+}
+
+body.dark-mode .btn-outline-dark:hover {
+  background-color: #333;
+}

@@ -1,15 +1,19 @@
+// src/blocks/Header.js
+import React from 'react';
+
 function Header({ setCurrentView }) {
   return (
-    <header style={styles.header}>
-      <h1 style={styles.logo}>🎵 ArtWave</h1>
-      <nav>
-        <button onClick={() => setCurrentView('news')}>Inicio</button>
-        <button onClick={() => setCurrentView('new-artists')}>Nuevos</button>
-        <button onClick={() => setCurrentView('marketplace')}>Mercado</button>
-        <button onClick={() => setCurrentView('artist-profile')}>Artistas</button>
-        <button onClick={() => setCurrentView('user-profile')}>Mi Perfil</button>
-        <button onClick={() => signInWithGoogle()}>Iniciar sesión</button>
-      </nav>
-    </header>
+    <nav className="navbar navbar-light bg-light">
+      <div className="container">
+        <span className="navbar-brand">🎵 ArtWave</span>
+        <div>
+          <button onClick={() => setCurrentView('news')}>Inicio</button>
+          <button onClick={() => setCurrentView('new-artists')}>Nuevos</button>
+          <button onClick={() => setCurrentView('marketplace')}>Mercado</button>
+        </div>
+      </div>
+    </nav>
   );
 }
+
+export default Header;
